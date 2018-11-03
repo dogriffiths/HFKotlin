@@ -23,8 +23,8 @@ Feature: Welcome users
       | 10     | generics                           | Know your Ins from your Outs       | images/11148.jpg |
       | 11     | lambdas and higher-order functions | Treating Code like Data            | images/11333.jpg |
       | 12     | built-in higher-order functions    | Power Up your Code                 | images/11142.jpg |
-      | 13     | testing                            | Hold your Code to Account          | images/11199.jpg |
-      | 14     | leftovers                          | The Top Ten Things we didn't cover | images/11287.jpg |
+      | App I  | testing                            | Hold your Code to Account          | images/11199.jpg |
+      | App II | leftovers                          | The Top Ten Things we didn't cover | images/11287.jpg |
     When I navigate to 'Head First Kotlin'
     Then the home page will be visible
 

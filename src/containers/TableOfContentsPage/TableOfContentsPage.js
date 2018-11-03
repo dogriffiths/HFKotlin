@@ -10,13 +10,13 @@ class TableOfContentsPage extends Component {
         return <div>
             <AppBarAndMenu title='Table of contents'/>
             <section className='tableOfContents'>
-                {chapters.map((chapter, index) =>
+                {chapters.map(chapter =>
                     <ImageItem
                         src={chapter.image}
                         name={
                             <div>
                                 <div className='chapter-number'
-                                     style={{float: 'left', marginRight: '1ex'}}>{index + 1} </div>
+                                     style={{float: 'left', marginRight: '1ex'}}>{chapter.name} </div>
                                 <div className='chapter-title'>{chapter.title}</div>
                             </div>
                         }
