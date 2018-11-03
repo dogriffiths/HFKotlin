@@ -1,16 +1,18 @@
 .PHONY: publish
+NVM=8.10.0
 
 clean:
 	rm -rf build
 	rm -rf node_modules
 
 node_modules:
-	yarn install
+	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn install
 
 build: node_modules
-	yarn build
+	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn build
+
+start: build
+	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn start
 
 publish: build
-	yarn run deploy
-#	cp -r build/* publish/
-#	cd publish && git add --all && (git commit -am "Update"; git push)
+	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn run deploy

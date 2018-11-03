@@ -24,3 +24,7 @@ yarn-error.log*
 publish
 .idea
 HFKotlinWeb.iml
+*.iml
+build
+.gradle
+gradle
