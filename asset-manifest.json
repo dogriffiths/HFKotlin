@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.5cca4e73.chunk.css",
-  "main.js": "/static/js/main.2709fa47.chunk.js",
-  "main.js.map": "/static/js/main.2709fa47.chunk.js.map",
-  "static/js/1.a700ff87.chunk.js": "/static/js/1.a700ff87.chunk.js",
-  "static/js/1.a700ff87.chunk.js.map": "/static/js/1.a700ff87.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-  "static/css/main.5cca4e73.chunk.css.map": "/static/css/main.5cca4e73.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.3029a9e758f888dfdc1a527c1d749d3a.js": "/precache-manifest.3029a9e758f888dfdc1a527c1d749d3a.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/HFKotlin/static/css/main.5cca4e73.chunk.css",
+  "main.js": "/HFKotlin/static/js/main.b1415111.chunk.js",
+  "main.js.map": "/HFKotlin/static/js/main.b1415111.chunk.js.map",
+  "static/js/1.a700ff87.chunk.js": "/HFKotlin/static/js/1.a700ff87.chunk.js",
+  "static/js/1.a700ff87.chunk.js.map": "/HFKotlin/static/js/1.a700ff87.chunk.js.map",
+  "runtime~main.js": "/HFKotlin/static/js/runtime~main.35fda356.js",
+  "runtime~main.js.map": "/HFKotlin/static/js/runtime~main.35fda356.js.map",
+  "static/media/logo.svg": "/HFKotlin/static/media/logo.5d5d9eef.svg",
+  "static/css/main.5cca4e73.chunk.css.map": "/HFKotlin/static/css/main.5cca4e73.chunk.css.map",
+  "index.html": "/HFKotlin/index.html",
+  "precache-manifest.cbf56945e7471a5900afa8c03826a2cc.js": "/HFKotlin/precache-manifest.cbf56945e7471a5900afa8c03826a2cc.js",
+  "service-worker.js": "/HFKotlin/service-worker.js"
 }
