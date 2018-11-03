@@ -1,8 +1,6 @@
 package com.example.components;
 
 import org.openqa.selenium.By;
-import uk.co.blackpepper.relish.selenide.Page;
-import uk.co.blackpepper.relish.selenide.Table;
 
 public class TableOfContentsPage extends BasicPage {
 
@@ -10,7 +8,7 @@ public class TableOfContentsPage extends BasicPage {
         super("/tableOfContents");
     }
 
-    public Table tableOfContents() {
-        return new Table(By.className("tableOfContents"), this);
+    public ChapterCards tableOfContents() {
+        return new ChapterCards(By.className("tableOfContents"), this);
     }
 }
