@@ -14,6 +14,6 @@ dependencies {
     testCompile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
     testCompile group: 'com.codeborne', name: 'selenide', version: '4.8'
     testCompile group: 'org.hamcrest', name:'java-hamcrest', version: '2.0.0.0'
-    testCompile 'com.github.dogriffiths.relish:relish-core:0.0.202'
-    testCompile 'com.github.dogriffiths.relish:relish-selenide:0.0.202'
+    testCompile 'com.github.dogriffiths.relish:relish-core:0.0.204'
+    testCompile 'com.github.dogriffiths.relish:relish-selenide:0.0.204'
 }
