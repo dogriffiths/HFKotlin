@@ -17,3 +17,7 @@ dependencies {
     testCompile 'com.github.dogriffiths.relish:relish-core:0.0.204'
     testCompile 'com.github.dogriffiths.relish:relish-selenide:0.0.204'
 }
+
+test {
+    systemProperties System.properties
+}
