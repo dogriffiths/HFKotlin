@@ -2,6 +2,7 @@ package com.example.steps;
 
 import com.example.components.CurrentPage;
 import com.example.components.HomePage;
+import com.example.components.SourceCodePage;
 import com.example.components.TableOfContentsPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -10,10 +11,13 @@ import uk.co.blackpepper.relish.core.TableRow;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public class SomeSteps
 {
     private HomePage homePage = new HomePage();
     private TableOfContentsPage tableOfContentsPage = new TableOfContentsPage();
+    private SourceCodePage sourceCodePage = new SourceCodePage();
     private CurrentPage currentPage = new CurrentPage();
 
     @When("^I launch the app$")
@@ -30,7 +34,6 @@ public class SomeSteps
     public void theTitleWillBeHeadFirstKotlin(String expectedTitle) {
         currentPage.pageTitle().matches(expectedTitle);
         currentPage.appBar().title().matches(expectedTitle);
-        currentPage.title().matches(expectedTitle);
     }
 
     @And("^I navigate to '([^']*)'$")
@@ -46,5 +49,12 @@ public class SomeSteps
     @Then("^the home page will be visible$")
     public void theHomePageWillBeVisible() {
         homePage.assertVisible();
+    }
+
+    @And("^I will see a link to the Github repo$")
+    public void iWillSeeALinkToTheGithubRepo() {
+        sourceCodePage.repoLinkUrl().matches("https://github.com/dogriffiths/HFKotlin");
+        sourceCodePage.repoLink().matches("source code on Github");
+        assertEquals(sourceCodePage.repoLink().get().attr("target"), "_blank");
     }
 }

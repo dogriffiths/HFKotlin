@@ -14,7 +14,7 @@ build: node_modules
 start: build
 	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn start
 
-test:
+test: build
 	cd tests && ./gradlew test
 
 publish: build

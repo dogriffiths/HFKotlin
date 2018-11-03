@@ -85,6 +85,14 @@ class AppBarAndMenu extends Component {
                             >
                                 <ListItemText primary='Table of contents'/>
                             </ListItem>
+                            <ListItem
+                                button
+                                onClick={() => this.setState({open: false}, () => {
+                                    this.props.history.push('/sourceCode')
+                                })}
+                            >
+                                <ListItemText primary='Source code'/>
+                            </ListItem>
                         </List>
                     </div>
                 </div>

@@ -3,54 +3,38 @@ import React, {Component} from 'react';
 import './TableOfContentsPage.css';
 import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
 
+const contents = [
+    {number: 1, title: "Getting started", subtitle: "A Quick Dip"},
+    {number: 2, title: "Basic types and variables", subtitle: "Being a Variable"},
+    {number: 3, title: "Functions", subtitle: "Getting Out of Main"},
+    {number: 4, title: "Classes and objects", subtitle: "A Bit of Class"},
+    {number: 5, title: "Subclasses and superclasses", subtitle: "Using Your Inheritance"},
+    {number: 6, title: "Abstract classes and interfaces", subtitle: "Serious Polymorphism"},
+    {number: 7, title: "Data classes", subtitle: "Dealing with Data"},
+];
+
 class TableOfContentsPage extends Component {
     render() {
         return <div>
             <AppBarAndMenu title='Table of contents'/>
-            <h1>Table of contents</h1>
             <table className='tableOfContents'>
                 <tr>
                     <th> Number</th>
                     <th> Title</th>
                     <th> Subtitle</th>
                 </tr>
-                <tr>
-                    <td> 1</td>
-                    <td> Getting started</td>
-                    <td> A Quick Dip</td>
-                </tr>
-                <tr>
-                    <td> 2</td>
-                    <td> Basic types and variables</td>
-                    <td> Being a Variable</td>
-                </tr>
-                <tr>
-                    <td> 3</td>
-                    <td> Functions</td>
-                    <td> Getting Out of Main</td>
-                </tr>
-                <tr>
-                    <td> 4</td>
-                    <td> Classes and objects</td>
-                    <td> A Bit of Class</td>
-                </tr>
-                <tr>
-                    <td> 5</td>
-                    <td> Subclasses and superclasses</td>
-                    <td> Using Your Inheritance</td>
-                </tr>
-                <tr>
-                    <td> 6</td>
-                    <td> Abstract classes and interfaces</td>
-                    <td> Serious Polymorphism</td>
-                </tr>
-                <tr>
-                    <td> 7</td>
-                    <td> Data classes</td>
-                    <td> Dealing with Data</td>
-                </tr>
+                <tbody>
+                {contents.map(chapter =>
+                    <tr>
+                        <td>{chapter.number}</td>
+                        <td>{chapter.title}</td>
+                        <td>{chapter.subtitle}</td>
+                    </tr>
+                )}
+                </tbody>
             </table>
-        </div>;
+        </div>
+            ;
     }
 }
 

@@ -20,3 +20,11 @@ Feature: Welcome users
       | 7      | Data classes                    | Dealing with Data      |
     When I navigate to 'Head First Kotlin'
     Then the home page will be visible
+
+    Scenario: Can get to the source code
+      When I launch the app
+      And I navigate to 'Source code'
+      Then the title will be 'Source code'
+      And I will see a link to the Github repo
+      When I navigate to 'Head First Kotlin'
+      Then the home page will be visible

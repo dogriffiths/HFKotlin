@@ -5,6 +5,7 @@ import HomePage from "./containers/HomePage/HomePage";
 
 import './App.css';
 import TableOfContentsPage from "./containers/TableOfContentsPage/TableOfContentsPage";
+import SourceCodePage from "./containers/SourceCodePage/SourceCodePage";
 
 class App extends Component {
     render() {
@@ -14,6 +15,7 @@ class App extends Component {
                     <div>
                         <Route exact path="/" component={HomePage}/>
                         <Route exact path="/tableOfContents" component={TableOfContentsPage}/>
+                        <Route exact path="/sourceCode" component={SourceCodePage}/>
                     </div>
                 </div>
             </HashRouter>
