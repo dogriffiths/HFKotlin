@@ -12,7 +12,7 @@ class TableOfContentsPage extends Component {
             <section className='tableOfContents'>
                 {chapters.map((chapter, index) =>
                     <ImageItem
-                        src='https://dg.imgix.net/do-you-think-you-re-happy-jgdbfiey-en/landscape/do-you-think-you-re-happy-jgdbfiey-9bb0198eeccd0a3c3c13aed064e2e2b3.jpg?ts=1520525855&ixlib=rails-3.0.0&w=700&h=394&dpr=2&ch=Width%2CDPR&auto=format%2Ccompress&fit=min'
+                        src={chapter.image}
                         name={
                             <div>
                                 <div className='chapter-number'

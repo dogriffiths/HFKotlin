@@ -21,4 +21,8 @@ public class ChapterCard extends SelenideWidget {
     public SelenideWidget subtitle() {
         return new SelenideWidget(By.className("ImageItem-description"), this);
     }
+
+    public Image image() {
+        return new Image(By.className("cover-image"), this);
+    }
 }
