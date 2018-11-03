@@ -1,3 +1,0 @@
-#+TITLE: Head First Kotlin
-
-Coming soon...
