@@ -5,13 +5,13 @@ import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
 import ImageItem from "../../components/ImageItem/ImageItem";
 
 const contents = [
-    {number: 1, title: "Getting started", subtitle: "A Quick Dip"},
-    {number: 2, title: "Basic types and variables", subtitle: "Being a Variable"},
-    {number: 3, title: "Functions", subtitle: "Getting Out of Main"},
-    {number: 4, title: "Classes and objects", subtitle: "A Bit of Class"},
-    {number: 5, title: "Subclasses and superclasses", subtitle: "Using Your Inheritance"},
-    {number: 6, title: "Abstract classes and interfaces", subtitle: "Serious Polymorphism"},
-    {number: 7, title: "Data classes", subtitle: "Dealing with Data"},
+    {title: "Getting started", subtitle: "A Quick Dip"},
+    {title: "Basic types and variables", subtitle: "Being a Variable"},
+    {title: "Functions", subtitle: "Getting Out of Main"},
+    {title: "Classes and objects", subtitle: "A Bit of Class"},
+    {title: "Subclasses and superclasses", subtitle: "Using Your Inheritance"},
+    {title: "Abstract classes and interfaces", subtitle: "Serious Polymorphism"},
+    {title: "Data classes", subtitle: "Dealing with Data"},
 ];
 
 class TableOfContentsPage extends Component {
