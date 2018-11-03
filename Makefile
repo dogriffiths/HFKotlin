@@ -17,5 +17,8 @@ start: build
 test: build
 	cd tests && ./gradlew test
 
+storybook: build
+	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn storybook
+
 publish: build
 	. "${NVM_DIR}/nvm.sh" && nvm use $(NVM) && yarn run deploy

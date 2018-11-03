@@ -28,3 +28,4 @@ HFKotlinWeb.iml
 build
 .gradle
 gradle
+.cache
