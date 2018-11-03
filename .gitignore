@@ -30,3 +30,4 @@ build
 gradle
 .cache
 build_ie
+build_edge
