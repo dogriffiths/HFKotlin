@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "https://dogriffiths.github.io/HFKotlin/static/css/main.b4220adf.chunk.css"
   },
   {
-    "revision": "16580ef7f473d3365c7427dde13c1ba4",
+    "revision": "1498b71b888bfd1e7afe554bbd481d31",
     "url": "https://dogriffiths.github.io/HFKotlin/index.html"
   }
 ];
