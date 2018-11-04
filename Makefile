@@ -17,6 +17,9 @@ start: build
 test: build
 	cd tests && ./gradlew clean test
 
+watch:
+	watchman-make -p 'content/**/*.md' --run ./compileContent.sh
+
 test_ie:
 	cd tests && ./gradlew --no-daemon --stacktrace -Dselenide.baseUrl='http://192.168.1.2:3000/' -DdriverName=ie -PbuildDir=build_ie clean test
 
