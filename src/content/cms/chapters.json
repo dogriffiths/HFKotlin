@@ -1,7 +1,141 @@
 {
-  "1": {
-    "preview": "# A quick dip",
-    "content": "# A quick dip",
-    "basename": "1"
+  "01": {
+    "name": 1,
+    "title": "getting started",
+    "subtitle": "A Quick Dip",
+    "image": "images/11254.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "01"
+  }
+,
+  "02": {
+    "name": 2,
+    "title": "basic types and variables",
+    "subtitle": "Being a Variable",
+    "image": "images/11120.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "02"
+  }
+,
+  "03": {
+    "name": 3,
+    "title": "functions",
+    "subtitle": "Getting Out of Main",
+    "image": "images/11114.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "03"
+  }
+,
+  "04": {
+    "name": 4,
+    "title": "classes and objects",
+    "subtitle": "A Bit of Class",
+    "image": "images/11240.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "04"
+  }
+,
+  "05": {
+    "name": 5,
+    "title": "superclasses and subclasses",
+    "subtitle": "Using your Inheritance",
+    "image": "images/11165.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "05"
+  }
+,
+  "06": {
+    "name": 6,
+    "title": "abstract classes and interfaces",
+    "subtitle": "Serious Polymorphism",
+    "image": "images/11131.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "06"
+  }
+,
+  "07": {
+    "name": 7,
+    "title": "data classes",
+    "subtitle": "Dealing with Data",
+    "image": "images/53212.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "07"
+  }
+,
+  "08": {
+    "name": 8,
+    "title": "nulls and exceptions",
+    "subtitle": "Safe and Sound",
+    "image": "images/11077.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "08"
+  }
+,
+  "09": {
+    "name": 9,
+    "title": "collections",
+    "subtitle": "Get Organized",
+    "image": "images/11004.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "09"
+  }
+,
+  "10": {
+    "name": 10,
+    "title": "generics",
+    "subtitle": "Know your Ins from your Outs",
+    "image": "images/11148.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "10"
+  }
+,
+  "11": {
+    "name": 11,
+    "title": "lambdas & higher-order functions",
+    "subtitle": "Treating Code like Data",
+    "image": "images/11333.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "11"
+  }
+,
+  "12": {
+    "name": 12,
+    "title": "built-in higher-order functions",
+    "subtitle": "Power Up your Code",
+    "image": "images/11142.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "12"
+  }
+,
+  "13": {
+    "name": "App I",
+    "title": "testing",
+    "subtitle": "Hold your Code to Account",
+    "image": "images/11199.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "13"
+  }
+,
+  "14": {
+    "name": "App II",
+    "title": "leftovers",
+    "subtitle": "The Top Ten Things we didn't cover",
+    "image": "images/11287.jpg",
+    "preview": "Some content goes here",
+    "content": "\nSome content goes here\n",
+    "basename": "14"
   }
 }

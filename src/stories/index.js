@@ -61,7 +61,7 @@ storiesOf('ImageItem', module)
         <ImageItem
             src={'https://vignette.wikia.nocookie.net/wombles/images/f/fa/Orinoco.jpeg/revision/' +
             'latest/scale-to-width-down/220?cb=20180606150928'}
-            name={'Some name'} description={'Some description'}
+            name={'11 lambdas and higher-order functions'} description={'The Top Ten Things we didn\'t cover'}
         />
     )
     .add('multiple', () =>

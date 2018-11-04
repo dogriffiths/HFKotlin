@@ -1,9 +1,8 @@
 package com.example.steps;
 
-import com.example.components.CurrentPage;
-import com.example.components.HomePage;
-import com.example.components.SourceCodePage;
-import com.example.components.TableOfContentsPage;
+import com.example.components.*;
+import cucumber.api.PendingException;
+import cucumber.api.Transpose;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,6 +18,7 @@ public class SomeSteps
     private TableOfContentsPage tableOfContentsPage = new TableOfContentsPage();
     private SourceCodePage sourceCodePage = new SourceCodePage();
     private CurrentPage currentPage = new CurrentPage();
+    private ChapterPage chapter = new ChapterPage();
 
     @When("^I launch the app$")
     public void iLaunchTheApp() {
@@ -56,5 +56,15 @@ public class SomeSteps
         sourceCodePage.repoLinkUrl().matches("https://github.com/dogriffiths/HFKotlin");
         sourceCodePage.repoLink().matches("source code on Github");
         assertEquals(sourceCodePage.repoLink().get().attr("target"), "_blank");
+    }
+
+    @When("^I open chapter '([^']*)'$")
+    public void iOpenChapterGettingStarted(String chapterTitle) {
+        tableOfContentsPage.tableOfContents().with("title", chapterTitle).click();
+    }
+
+    @Then("^I see this chapter$")
+    public void iSeeThisChapter(@Transpose List<TableRow> details) {
+        chapter.matches(details.get(0));
     }
 }

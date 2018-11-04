@@ -8,6 +8,7 @@ import TableOfContentsPage from "./containers/TableOfContentsPage/TableOfContent
 import SourceCodePage from "./containers/SourceCodePage/SourceCodePage";
 import BlogIndex from "./containers/BlogIndex/BlogIndex";
 import Article from "./containers/Article/Article";
+import Chapter from "./containers/Chapter/Chapter";
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                     <div>
                         <Route exact path="/" component={HomePage}/>
                         <Route exact path="/tableOfContents" component={TableOfContentsPage}/>
+                        <Route parameter='chapterId'  path="/chapters/:chapterId" component={Chapter}/>
                         <Route exact path="/sourceCode" component={SourceCodePage}/>
                         <Route exact path="/blogs" component={BlogIndex}/>
                         <Route parameter='blogId'  path="/blogs/:blogId" component={Article}/>
