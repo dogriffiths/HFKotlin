@@ -1,7 +1,0 @@
-{
-  "main": {
-    "preview": "# Example title\n\nThis is an example Markdown file.\n\n* Bullet \n* …",
-    "content": "# Example title\n\nThis is an example Markdown file.\n\n* Bullet \n* Pointed\n* List\n\n*Italics* and **Emboldened** here. Will any of this work? \n\nIf music be the food of love, play on\n\nGive me excess of it that the appetite may sicken and so die.",
-    "basename": "main"
-  }
-}

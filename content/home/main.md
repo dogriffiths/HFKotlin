@@ -1,5 +1,3 @@
-# Example title
-
 This is an example Markdown file.
 
 * Bullet 
@@ -8,6 +6,4 @@ This is an example Markdown file.
 
 *Italics* and **Emboldened** here. Will any of this work? 
 
-If music be the food of love, play on
-
-Give me excess of it that the appetite may sicken and so die.
+Hello World

@@ -89,6 +89,14 @@ class AppBarAndMenu extends Component {
                             <ListItem
                                 button
                                 onClick={() => this.setState({open: false}, () => {
+                                    this.props.history.push('/blogs')
+                                })}
+                            >
+                                <ListItemText primary='Blog'/>
+                            </ListItem>
+                            <ListItem
+                                button
+                                onClick={() => this.setState({open: false}, () => {
                                     this.props.history.push('/sourceCode')
                                 })}
                             >

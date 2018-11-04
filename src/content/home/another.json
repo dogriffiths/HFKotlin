@@ -1,7 +1,0 @@
-{
-  "another": {
-    "preview": "# Example title\n\nThis is an example Markdown file.\n\n* Bullet \n* …",
-    "content": "# Example title\n\nThis is an example Markdown file.\n\n* Bullet \n* Pointed\n* List\n\n*Italics* and **Emboldened** here",
-    "basename": "another"
-  }
-}
