@@ -7,6 +7,7 @@ import {blogArticles} from "../../content";
 import ArticleView from "../../components/ArticleView/ArticleView";
 
 import './HomePage.css';
+import TwitterTimeline from "../TwitterTimeline/TwitterTimeline";
 
 class HomePage extends Component {
     constructor(props) {
@@ -24,6 +25,7 @@ class HomePage extends Component {
                 <section className='Home-recent'>
                     <h2>Recent posts</h2>
                     <ArticleList articles={this.state.articles}/>
+                    <TwitterTimeline/>
                 </section>
             </div>
         </div>;

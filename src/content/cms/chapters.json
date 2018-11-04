@@ -4,8 +4,8 @@
     "title": "getting started",
     "subtitle": "A Quick Dip",
     "image": "images/11254.jpg",
-    "preview": "# Kotlin is making waves\nFrom it’s first official release, Kotlin …",
-    "content": "\n# Kotlin is making waves\nFrom it’s first official release, Kotlin has impressed programmers with its **friendly syntax, conciseness, flexibility and power**. In this book, we’ll teach you how to **build your own Kotlin applications**, and we’ll start by getting you to build a basic application and run it. Along the way, you’ll meet some of Kotlin’s basic syntax, such as *statements, loops and conditional branching*. Your journey has just begun...\n\n## Chapter headings...\n\n* Welcome to Kotlinville\n* You can use Kotlin nearly everywhere\n* What we’ll do in this chapter\n* Sharpen your pencil (Exercise)\n* Sharpen your pencil (Solution)\n* Install IntelliJ IDEA (Community Edition)\n* Let's build a basic application\n* You've just created your first Kotlin project\n* Add a new Kotlin file to the project\n* Anatomy of the main function\n* Add the main function to App.kt\n* Test drive\n* What can you say in the main function?\n* Loop and loop and loop...\n* A loopy example\n* Conditional branching\n* Using *if* to return a value\n* Update the main function\n* Code magnets (Exercise)\n* Using the Kotlin interactive shell\n* You can add multi-line code snippets to the REPL\n* Be the Compiler (Exercise)\n* Be the Compiler (Solution)\n* Mixed Messages (Exercise)\n* Mixed Messages (Solution)\n* Code magnets (Solution)\n* Your Kotlin Toolbox\n\n",
+    "preview": "## Kotlin is making waves\nFrom it’s first official release, Kotlin …",
+    "content": "\n## Kotlin is making waves\nFrom it’s first official release, Kotlin has impressed programmers with its **friendly syntax, conciseness, flexibility and power**. In this book, we’ll teach you how to **build your own Kotlin applications**, and we’ll start by getting you to build a basic application and run it. Along the way, you’ll meet some of Kotlin’s basic syntax, such as *statements, loops and conditional branching*. Your journey has just begun...\n\n## Chapter headings...\n\n* Welcome to Kotlinville\n* You can use Kotlin nearly everywhere\n* What we’ll do in this chapter\n* Sharpen your pencil (Exercise)\n* Sharpen your pencil (Solution)\n* Install IntelliJ IDEA (Community Edition)\n* Let's build a basic application\n* You've just created your first Kotlin project\n* Add a new Kotlin file to the project\n* Anatomy of the main function\n* Add the main function to App.kt\n* Test drive\n* What can you say in the main function?\n* Loop and loop and loop...\n* A loopy example\n* Conditional branching\n* Using *if* to return a value\n* Update the main function\n* Code magnets (Exercise)\n* Using the Kotlin interactive shell\n* You can add multi-line code snippets to the REPL\n* Be the Compiler (Exercise)\n* Be the Compiler (Solution)\n* Mixed Messages (Exercise)\n* Mixed Messages (Solution)\n* Code magnets (Solution)\n* Your Kotlin Toolbox\n\n",
     "basename": "01"
   }
 ,
@@ -14,8 +14,8 @@
     "title": "basic types and variables",
     "subtitle": "Being a Variable",
     "image": "images/11120.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## There’s one thing all code depends on—variables \n\rSo in this …",
+    "content": "\n## There’s one thing all code depends on—variables \n\rSo in this chapter, we’re going to look under the hood, and show you how **Kotlin variables really work**. You’ll discover Kotlin’s **basic types**, such as *Ints*, *Floats* and *Booleans*, and learn how the Kotlin compiler can **cleverly infer a variable’s type from the value it’s given**. You’ll find out how to use **String templates** to construct complex Strings with very little code, and you’ll learn how to create **arrays** to hold multiple values. Finally, you’ll discover *why objects are so important to life in Kotlinville*.",
     "basename": "02"
   }
 ,
@@ -24,8 +24,8 @@
     "title": "functions",
     "subtitle": "Getting Out of Main",
     "image": "images/11114.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## It’s time to take it up a notch, and learn about functions.\n\rSo …",
+    "content": "\n## It’s time to take it up a notch, and learn about functions.\n\rSo far, all the code you’ve written has been inside your application’s main function. But if you want to write code that’s better organized and easier to maintain, you need to know how to split your code into separate functions. In this chapter, you’ll learn how to write functions and interact with your application by building a game. You’ll discover how to write compact single expression functions. Along the way you’ll find out how to iterate through ranges and collections using the powerful for loop.",
     "basename": "03"
   }
 ,
@@ -34,8 +34,8 @@
     "title": "classes and objects",
     "subtitle": "A Bit of Class",
     "image": "images/11240.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## It’s time we looked beyond Kotlin’s basic types \n\rSooner or …",
+    "content": "\n## It’s time we looked beyond Kotlin’s basic types \n\rSooner or later, you’re going to want to use something more than Kotlin’s basic types. And that’s where classes come in. Classes are templates that allow you to create your own types of objects, and define their properties and functions. Here, you’ll learn how to design and define classes, and how to use them to create new types of objects. You’ll meet constructors, initializer blocks, getters and setters, and you’ll discover how they can be used to protect your properties. Finally, you’ll learn how data hiding is built into all Kotlin code, saving you time, effort and a multitude of keystrokes.\n",
     "basename": "04"
   }
 ,
@@ -44,8 +44,8 @@
     "title": "superclasses and subclasses",
     "subtitle": "Using your Inheritance",
     "image": "images/11165.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Ever found yourself thinking that an object’s type would be …",
+    "content": "\n## Ever found yourself thinking that an object’s type would be perfect if you could just change a few things?\n\rWell, that’s one of the advantages of inheritance. Here, you’ll learn how to create subclasses, and inherit the properties and functions of a superclass. You’ll discover how to override functions and properties to make your classes behave the way you want, and you’ll find out when this is (and isn’t) appropriate. Finally, you’ll see how inheritance helps you avoid duplicate code, and how to improve your flexibility with polymorphism.\n",
     "basename": "05"
   }
 ,
@@ -54,8 +54,8 @@
     "title": "abstract classes and interfaces",
     "subtitle": "Serious Polymorphism",
     "image": "images/11131.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## A superclass inheritance hierarchy is just the beginning \n\rIf you …",
+    "content": "\n## A superclass inheritance hierarchy is just the beginning \n\rIf you want to fully exploit polymorphism, you need to design using abstract classes and interfaces. In this chapter, you’ll discover how to use abstract classes to control which classes in your hierarchy can and can’t be instantiated. You’ll see how they can force concrete subclasses to provide their own implementations. You’ll find out how to use interfaces to share behavior between independent classes. And along the way, you’ll learn the ins and outs of is, as and when.\n",
     "basename": "06"
   }
 ,
@@ -64,8 +64,8 @@
     "title": "data classes",
     "subtitle": "Dealing with Data",
     "image": "images/53212.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Nobody wants to spend their life reinventing the wheel\n \rMost …",
+    "content": "\n## Nobody wants to spend their life reinventing the wheel\n \rMost applications include classes whose main purpose is to store data, so to make your coding life easier, the Kotlin developers came up with the concept of a data class. Here, you’ll learn how data classes enable you to write code that’s cleaner and more concise than you ever dreamed was possible. You’ll explore the data class utility functions, and discover how to destructure a data object into its component parts. Along the way, you’ll find out how default parameter values can make your code more flexible, and we’ll introduce you to Any, the mother of all superclasses.\n",
     "basename": "07"
   }
 ,
