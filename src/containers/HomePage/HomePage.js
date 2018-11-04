@@ -5,9 +5,9 @@ import home from '../../content/cms/home';
 import ArticleList from "../../components/ArticleList/ArticleList";
 import {blogArticles} from "../../content";
 import ArticleView from "../../components/ArticleView/ArticleView";
+import TwitterTimeline from "../TwitterTimeline/TwitterTimeline";
 
 import './HomePage.css';
-import TwitterTimeline from "../TwitterTimeline/TwitterTimeline";
 
 class HomePage extends Component {
     constructor(props) {
@@ -21,12 +21,16 @@ class HomePage extends Component {
         return <div>
             <AppBarAndMenu title='Head First Kotlin'/>
             <div className='Home-content'>
-                <ArticleView article={home.main}/>
-                <section className='Home-recent'>
-                    <h2>Recent posts</h2>
-                    <ArticleList articles={this.state.articles}/>
+                <div className='Home-main'>
+                    <ArticleView article={home.main}/>
+                    <section className='Home-recent'>
+                        <h2>Recent posts</h2>
+                        <ArticleList articles={this.state.articles}/>
+                    </section>
+                </div>
+                <div className='Home-other'>
                     <TwitterTimeline/>
-                </section>
+                </div>
             </div>
         </div>;
     }

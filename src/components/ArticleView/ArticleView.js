@@ -2,9 +2,9 @@ import {withRouter} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import React, {Component} from "react";
 import moment from "moment";
+import Cover from "../Cover/Cover";
 
 import './ArticleView.css'
-import Cover from "../Cover/Cover";
 
 class ArticleView extends Component {
     constructor(props) {
