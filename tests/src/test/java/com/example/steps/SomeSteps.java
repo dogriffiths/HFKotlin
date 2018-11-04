@@ -19,6 +19,9 @@ public class SomeSteps
     private SourceCodePage sourceCodePage = new SourceCodePage();
     private CurrentPage currentPage = new CurrentPage();
     private ChapterPage chapter = new ChapterPage();
+    private ArticlePage articlePage = new ArticlePage();
+    private BlogsPage blogsPage = new BlogsPage();
+    private AliasStore aliasStore = AliasStore.getInstance();
 
     @When("^I launch the app$")
     public void iLaunchTheApp() {
@@ -66,5 +69,24 @@ public class SomeSteps
     @Then("^I see this chapter$")
     public void iSeeThisChapter(@Transpose List<TableRow> details) {
         chapter.matches(details.get(0));
+    }
+
+    @When("^I open the first blog article with title '([^']*)'$")
+    public void iOpenTheFirstBlogArticleWithTitleTitle(String titleAlias) {
+        String title = blogsPage.articles().first().title().getStringValue();
+        aliasStore.put(titleAlias, title);
+        blogsPage.articles().first().title().click();
+    }
+
+    @Then("^I can see a blog article with title '([^']*)'$")
+    public void iCanSeeABlogArticleWithTitleTitle(String titleAlias) {
+        String expectedTitle = aliasStore.get(titleAlias, String.class);
+        articlePage.title().matches(expectedTitle);
+        articlePage.pageTitle().matches(expectedTitle);
+    }
+
+    @When("^I choose to return to blogs$")
+    public void iChooseToReturnToBlogs() {
+        articlePage.returnToBlogs().click();
     }
 }

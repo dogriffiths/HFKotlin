@@ -22,6 +22,8 @@ import static com.codeborne.selenide.Selenide.clearBrowserLocalStorage;
 
 @CucumberOptions(features = "features")
 public class Hooks {
+    private AliasStore aliasStore = AliasStore.getInstance();
+
     @Before
     public void before() throws IOException {
         String driver = getDriverName();
@@ -67,6 +69,7 @@ public class Hooks {
 
     @After
     public void after() throws IOException {
+        aliasStore.clear();
         clearBrowserCookies();
         try {
             clearBrowserLocalStorage();

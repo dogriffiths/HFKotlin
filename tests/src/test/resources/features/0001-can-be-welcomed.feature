@@ -40,3 +40,12 @@ Feature: Welcome users
     And I will see a link to the Github repo
     When I navigate to 'Head First Kotlin'
     Then the home page will be visible
+
+    Scenario: Can open a blog
+      When I launch the app
+      And I navigate to 'Blog'
+      Then the title will be 'Blog'
+      When I open the first blog article with title 'title'
+      Then I can see a blog article with title 'title'
+      When I choose to return to blogs
+      Then the title will be 'Blog'

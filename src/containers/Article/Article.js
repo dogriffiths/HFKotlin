@@ -15,7 +15,7 @@ class Article extends Component {
         return <div>
             <AppBarAndMenu title={article.title}/>
             <div class="Article-content">
-            <Link to={'/blogs'}>Back to blogs</Link>
+            <Link to={'/blogs'} className='returnToBlogs'>Back to blogs</Link>
                 <ReactMarkdown source={article.content}/>
                 <div>Posted by {article.author}, {article.date}</div>
             </div>
