@@ -57,8 +57,7 @@ public class SomeSteps
     @And("^I will see a link to the Github repo$")
     public void iWillSeeALinkToTheGithubRepo() {
         sourceCodePage.repoLinkUrl().matches("https://github.com/dogriffiths/HFKotlin");
-        sourceCodePage.repoLink().matches("source code on Github");
-        assertEquals(sourceCodePage.repoLink().get().attr("target"), "_blank");
+        sourceCodePage.repoLink().matches("source code from Github");
     }
 
     @When("^I open chapter '([^']*)'$")

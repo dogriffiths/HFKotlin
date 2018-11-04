@@ -13,6 +13,7 @@
     "@storybook/addon-links": "^4.0.2",
     "@storybook/react": "^4.0.2",
     "babel-loader": "^8.0.4",
+    "moment": "^2.22.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-markdown": "^4.0.3",

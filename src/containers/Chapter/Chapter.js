@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 
 import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
 import chaptersContent from "../../content/cms/chapters";
-import ReactMarkdown from "react-markdown";
 
 import './Chapter.css';
 import {Link} from "react-router-dom";
+import ArticleView from "../../components/ArticleView/ArticleView";
 
 class Chapter extends Component {
     render() {
@@ -15,9 +15,9 @@ class Chapter extends Component {
         return <div>
             <AppBarAndMenu title={chapter.title}/>
             <div class="Chapter-content">
-                <Link to={'/tableOfContents'}>Back to table of contents</Link>
-                <h2 className='subtitle'>{chapter.subtitle}</h2>
-                <ReactMarkdown source={chapter.content}/>
+                <ArticleView article={chapter}>
+                    <Link to={'/tableOfContents'}>Back to table of contents</Link>
+                </ArticleView>
             </div>
         </div>;
     }

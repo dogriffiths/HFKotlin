@@ -10,7 +10,7 @@ public class HomePage extends BasicPage {
     }
 
     public SelenideWidget welcome() {
-        return new SelenideWidget(By.className("welcome"), this);
+        return new SelenideWidget(By.className("Home-content"), this);
     }
 
 }

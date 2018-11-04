@@ -9,10 +9,10 @@ public class SourceCodePage extends BasicPage {
     }
 
     public Link repoLinkUrl() {
-        return new Link(By.className("repoLink"), this);
+        return new Link(By.cssSelector("a"), this);
     }
 
     public SelenideWidget repoLink() {
-        return new SelenideWidget(By.className("repoLink"), this);
+        return new SelenideWidget(By.cssSelector("a"), this);
     }
 }

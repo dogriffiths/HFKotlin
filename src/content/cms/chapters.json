@@ -4,8 +4,8 @@
     "title": "getting started",
     "subtitle": "A Quick Dip",
     "image": "images/11254.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "# Kotlin is making waves\nFrom it’s first official release, Kotlin …",
+    "content": "\n# Kotlin is making waves\nFrom it’s first official release, Kotlin has impressed programmers with its **friendly syntax, conciseness, flexibility and power**. In this book, we’ll teach you how to **build your own Kotlin applications**, and we’ll start by getting you to build a basic application and run it. Along the way, you’ll meet some of Kotlin’s basic syntax, such as *statements, loops and conditional branching*. Your journey has just begun...\n\n## Chapter headings...\n\n* Welcome to Kotlinville\n* You can use Kotlin nearly everywhere\n* What we’ll do in this chapter\n* Sharpen your pencil (Exercise)\n* Sharpen your pencil (Solution)\n* Install IntelliJ IDEA (Community Edition)\n* Let's build a basic application\n* You've just created your first Kotlin project\n* Add a new Kotlin file to the project\n* Anatomy of the main function\n* Add the main function to App.kt\n* Test drive\n* What can you say in the main function?\n* Loop and loop and loop...\n* A loopy example\n* Conditional branching\n* Using *if* to return a value\n* Update the main function\n* Code magnets (Exercise)\n* Using the Kotlin interactive shell\n* You can add multi-line code snippets to the REPL\n* Be the Compiler (Exercise)\n* Be the Compiler (Solution)\n* Mixed Messages (Exercise)\n* Mixed Messages (Solution)\n* Code magnets (Solution)\n* Your Kotlin Toolbox\n\n",
     "basename": "01"
   }
 ,

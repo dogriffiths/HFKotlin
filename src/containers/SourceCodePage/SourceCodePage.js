@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom'
+import sourceCode from '../../content/cms/sourceCode';
+import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
+import ArticleView from "../../components/ArticleView/ArticleView";
 
 import './SourceCodePage.css';
-import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
 
 class SourceCodePage extends Component {
     render() {
         return <div>
             <AppBarAndMenu title='Source code'/>
-            You can download the <a className='repoLink'
-                                    href='https://github.com/dogriffiths/HFKotlin'
-                                    target='_blank'
-                                    rel="noopener noreferrer"
-        >source code on Github</a>
+            <ArticleView article={sourceCode.main}/>
         </div>;
     }
 }

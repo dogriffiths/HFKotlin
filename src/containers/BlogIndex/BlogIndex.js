@@ -1,26 +1,25 @@
 import React, {Component} from 'react';
-import {Link, withRouter} from 'react-router-dom'
-
 import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
-import blog from '../../content/cms/blog';
-import ReactMarkdown from "react-markdown";
+import {blogArticles} from '../../content';
+import ArticleList from "../../components/ArticleList/ArticleList";
 
 import './BlogIndex.css';
-import home from "../../content/cms/home";
 
 class BlogIndex extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            articles: blogArticles
+        }
+    }
+
     render() {
         return <div>
             <AppBarAndMenu title='Blog'/>
-            <div className='articles'>
-                {Object.keys(blog).map(blogKey => {
-                    const article = blog[blogKey];
-                    return <div className='ArticlePreview'>
-                        <h2 className='ArticlePreview-title'><Link to={`/blogs/${blogKey}`}>{article.title}</Link></h2>
-                        <ReactMarkdown source={blog[blogKey].preview}/>
-                        <div>Posted by {article.author}, {article.date}</div>
-                    </div>;
-                })}
+            <div className='blogContent'>
+                <div className='blogList'>
+                    <ArticleList articles={this.state.articles}/>
+                </div>
             </div>
         </div>;
     }

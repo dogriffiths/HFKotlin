@@ -1,9 +1,7 @@
-This is an example Markdown file.
+### What will you learn from this book?
 
-* Bullet 
-* Pointed
-* List
+Head First Kotlin is a complete introduction to coding in Kotlin. This book helps you learn the Kotlin language with a unique method that goes beyond syntax and how-to manuals, and teaches you how to think like a great Kotlin developer. Despite its playful appearance, it's serious stuff. You'll learn everything from language fundamentals, through to collections, generics, lambdas and higher-order functions. And along the way, you'll get to play with both object-oriented and functional programming. If you want to really understand Kotlin, this is the book for you.
 
-*Italics* and **Emboldened** here. Will any of this work? 
+### Why does this book look so different?
 
-Hello World
+Based on the latest research in cognitive science and learning theory, Head First Kotlin uses a visually rich format to engage your mind, rather than a text-heavy approach that puts you to sleep. Why waste your time struggling with new concepts? This multi-sensory learning experience is designed for the way your brain really works.
