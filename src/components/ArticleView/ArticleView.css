@@ -1,0 +1,12 @@
+.Article-tag {
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #444;
+    border-radius: 4px;
+    line-height: 12px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 4px 2px 4px;
+    margin: 4px 4px 4px 4px;
+}

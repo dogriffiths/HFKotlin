@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import moment from "moment";
 import React, {Component} from "react";
 
 import './ArticlePreview.css'
 import Cover from "../Cover/Cover";
+import ArticleFooter from "../ArticleFooter/ArticleFooter";
 
 class ArticlePreview extends Component {
     constructor(props) {
@@ -16,21 +16,17 @@ class ArticlePreview extends Component {
     }
 
     render() {
-        const {article, minuteRead} = this.state;
+        const {article} = this.state;
 
         return <div className='ArticlePreview'>
             {article.image &&
-            <div className='ArticlePreview-imageContainer'><Cover src={article.image} className='ArticlePreview-image'/></div>
+            <div className='ArticlePreview-imageContainer'><Cover src={article.image} className='ArticlePreview-image'/>
+            </div>
             }
             <div className='ArticlePreview-title'><Link to={`/blogs/${article.id}`}>{article.title}</Link></div>
             <ReactMarkdown source={article.preview} className='ArticlePreview-text'/>
             <div className='ArticlePreview-footer'>
-                Posted by {article.author},
-                {article.date
-                    ? <div>{moment(article.date).format("MMM D")}</div>
-                    : <div/>
-                }
-                {minuteRead} min read
+                <ArticleFooter article={article}/>
             </div>
         </div>;
     }
