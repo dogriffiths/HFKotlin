@@ -48,7 +48,7 @@ pipeline {
                 script {
                     if (env.BRANCH_NAME == 'website') {
                         sh 'make publish'
-                        slack "Web site published\n${gitCommit}"
+                        slack "Web site published"
                     }
                 }
             }
