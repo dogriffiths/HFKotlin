@@ -19,6 +19,7 @@ pipeline {
                 checkout scm
             }
         }
+        
         stage('Clean') {
             steps {
                 script {
@@ -26,6 +27,7 @@ pipeline {
                 }
             }
         }
+
         stage('Build') {
             steps {
                         script {
@@ -41,27 +43,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                parallel(
-                    webclient: {
-                        sh 'make test'
-                        slack 'Web client tested'
-                    },
-                    edge: {
-                        sh 'sleep 40'
-                        sh 'make test_edge'
-                        slack 'Edge tested'
-                    },
-                    ie: {
-                        sh 'sleep 50'
-                        sh 'make test_ie'
-                        slack 'IE tested'
-                    },
-                )
-            }
-        }
-
         stage('Publish Site') {
             steps {
                 script {
@@ -73,6 +54,7 @@ pipeline {
             }
         }
     }
+
     post {
         always {
             script {
