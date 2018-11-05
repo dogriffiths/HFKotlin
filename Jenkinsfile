@@ -38,7 +38,7 @@ pipeline {
                                ) {
                                 sh 'make build'
                             }
-                            slack 'App built'
+                            slack 'Site built'
                         }
             }
         }
