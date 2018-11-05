@@ -40,7 +40,7 @@ class AppBarAndMenu extends Component {
 
     render() {
         return <div>
-            <AppBar className='appBar' position="static" style={{backgroundColor: 'white', color: '#333'}}>
+            <AppBar className='appBar' position="static" style={{backgroundColor: 'rgb(56, 40, 129)', color: 'white'}}>
             <Toolbar>
                 <IconButton
                     className={`${this.props.classes.menuButton} appBar-menu`}
