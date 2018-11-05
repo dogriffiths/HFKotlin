@@ -55,7 +55,7 @@ Visualizing things is a great way of understanding a topic. If the thing you’r
 
 Learn to mind map.
 
-# 9 Study or listen to music
+# 9 Listen to music
 Your high-level brain can’t do more than one thing at once. But if you listen to music at the same time as working, you can concentrate more. The fact that parrot’s like to dance suggests that a lot of music listening is actually done by the low-level parts of your brain. No one’s really sure. But if you want to concentrate, plug yourself in to music that you know well and like. It may just be enough to keep your lower brain functions busy and let you sneak some learning past them.
 
 Learning to play a musical instrument also appears to stimulate brain power. Brilliant minds love to play musical instruments. Donald Knuth and Alan Kay play pipe organs. Richard Feynman played the bongos.
