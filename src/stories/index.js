@@ -4,6 +4,9 @@ import {HashRouter} from 'react-router-dom';
 import AppBarAndMenu from "../components/AppBarAndMenu/AppBarAndMenu";
 import Cover from "../components/Cover/Cover";
 import ImageItem from "../components/ImageItem/ImageItem";
+import ArticleFooter from "../components/ArticleFooter/ArticleFooter";
+import ArticlePreview from "../components/ArticlePreview/ArticlePreview";
+import ArticleView from "../components/ArticleView/ArticleView";
 
 storiesOf('AppBarAndMenu', module)
     .add('basic', () => <HashRouter>
@@ -93,3 +96,37 @@ storiesOf('ImageItem', module)
         </div>
     )
 ;
+
+storiesOf('ArticleFooter', module)
+    .add('basic', () => <ArticleFooter article={{
+        content: 'Some sort of content',
+        date: '2029-12-11 15:42',
+        author: 'Wolfie Smith',
+        tags: ['Example', 'Tag', 'Hello']
+    }}/>)
+;
+
+storiesOf('ArticlePreview', module)
+    .add('basic', () => <HashRouter>
+        <ArticlePreview article={{
+            title: 'A blog title',
+            content: 'Some sort of content',
+            date: '2029-12-11 15:42',
+            author: 'Wolfie Smith',
+            tags: ['Example', 'Tag', 'Hello']
+        }}/>
+    </HashRouter>)
+;
+
+storiesOf('ArticleView', module)
+    .add('basic', () => <HashRouter>
+        <ArticleView article={{
+            title: 'A blog title',
+            content: '# A heading\nSome sort of content',
+            date: '2029-12-11 15:42',
+            author: 'Wolfie Smith',
+            tags: ['Example', 'Tag', 'Hello']
+        }}/>
+    </HashRouter>)
+;
+
