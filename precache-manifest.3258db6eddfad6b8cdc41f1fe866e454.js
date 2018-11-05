@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "https://dogriffiths.github.io/HFKotlin/static/js/runtime~main.32a1f91a.js"
   },
   {
-    "revision": "ea369ad1904d6109b5ca",
-    "url": "https://dogriffiths.github.io/HFKotlin/static/js/main.ea369ad1.chunk.js"
+    "revision": "485350ec67e066a7e6b9",
+    "url": "https://dogriffiths.github.io/HFKotlin/static/js/main.485350ec.chunk.js"
   },
   {
     "revision": "1c10656a07e542c85ca8",
     "url": "https://dogriffiths.github.io/HFKotlin/static/js/1.1c10656a.chunk.js"
   },
   {
-    "revision": "ea369ad1904d6109b5ca",
-    "url": "https://dogriffiths.github.io/HFKotlin/static/css/main.cf3f0258.chunk.css"
+    "revision": "485350ec67e066a7e6b9",
+    "url": "https://dogriffiths.github.io/HFKotlin/static/css/main.ae585034.chunk.css"
   },
   {
-    "revision": "74d442f811a96065d6db0e0bcb0d3206",
+    "revision": "aec65cd7cb4756f31b7d422ca92f8d1d",
     "url": "https://dogriffiths.github.io/HFKotlin/index.html"
   }
 ];
