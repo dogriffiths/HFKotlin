@@ -22,7 +22,7 @@ class ArticlePreview extends Component {
             {article.image &&
             <div className='ArticlePreview-imageContainer'><Cover src={article.image} className='ArticlePreview-image'/></div>
             }
-            <h1 className='ArticlePreview-title'><Link to={`/blogs/${article.id}`}>{article.title}</Link></h1>
+            <div className='ArticlePreview-title'><Link to={`/blogs/${article.id}`}>{article.title}</Link></div>
             <ReactMarkdown source={article.preview} className='ArticlePreview-text'/>
             <div className='ArticlePreview-footer'>
                 Posted by {article.author},

@@ -6,6 +6,7 @@ import ArticleView from "../../components/ArticleView/ArticleView";
 import {Link} from "react-router-dom";
 
 import './Article.css';
+import Content from "../../components/Content/Content";
 
 class Article extends Component {
     render() {
@@ -14,9 +15,11 @@ class Article extends Component {
 
         return <div>
             <AppBarAndMenu title={article.title}/>
-            <ArticleView article={article}>
-                <Link to={'/blogs'} className='returnToBlogs'>Back to blogs</Link>
-            </ArticleView>
+            <Content>
+                <ArticleView article={article}>
+                    <Link to={'/blogs'} className='returnToBlogs'>Back to blogs</Link>
+                </ArticleView>
+            </Content>
         </div>;
     }
 }

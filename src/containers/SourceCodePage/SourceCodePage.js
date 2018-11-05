@@ -5,12 +5,15 @@ import AppBarAndMenu from "../../components/AppBarAndMenu/AppBarAndMenu";
 import ArticleView from "../../components/ArticleView/ArticleView";
 
 import './SourceCodePage.css';
+import Content from "../../components/Content/Content";
 
 class SourceCodePage extends Component {
     render() {
         return <div>
             <AppBarAndMenu title='Source code'/>
-            <ArticleView article={sourceCode.main}/>
+            <Content>
+                <ArticleView article={sourceCode.main}/>
+            </Content>
         </div>;
     }
 }

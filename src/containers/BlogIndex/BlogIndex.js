@@ -4,6 +4,7 @@ import {blogArticles} from '../../content';
 import ArticleList from "../../components/ArticleList/ArticleList";
 
 import './BlogIndex.css';
+import Content from "../../components/Content/Content";
 
 class BlogIndex extends Component {
     constructor(props) {
@@ -16,11 +17,9 @@ class BlogIndex extends Component {
     render() {
         return <div>
             <AppBarAndMenu title='Blog'/>
-            <div className='blogContent'>
-                <div className='blogList'>
-                    <ArticleList articles={this.state.articles}/>
-                </div>
-            </div>
+            <Content>
+                <ArticleList articles={this.state.articles}/>
+            </Content>
         </div>;
     }
 }

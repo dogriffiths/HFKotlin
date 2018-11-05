@@ -8,6 +8,7 @@ import ArticleView from "../../components/ArticleView/ArticleView";
 import TwitterTimeline from "../TwitterTimeline/TwitterTimeline";
 
 import './HomePage.css';
+import Content from "../../components/Content/Content";
 
 class HomePage extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class HomePage extends Component {
     render() {
         return <div>
             <AppBarAndMenu title='Head First Kotlin'/>
-            <div className='Home-content'>
+            <Content>
                 <div className='Home-main'>
                     <ArticleView article={home.main}/>
                     <section className='Home-recent'>
@@ -31,7 +32,7 @@ class HomePage extends Component {
                 <div className='Home-other'>
                     <TwitterTimeline/>
                 </div>
-            </div>
+            </Content>
         </div>;
     }
 }

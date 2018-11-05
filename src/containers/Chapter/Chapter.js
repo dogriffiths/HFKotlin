@@ -6,6 +6,7 @@ import chaptersContent from "../../content/cms/chapters";
 import './Chapter.css';
 import {Link} from "react-router-dom";
 import ArticleView from "../../components/ArticleView/ArticleView";
+import Content from "../../components/Content/Content";
 
 class Chapter extends Component {
     render() {
@@ -14,11 +15,11 @@ class Chapter extends Component {
 
         return <div>
             <AppBarAndMenu title={chapter.title}/>
-            <div class="Chapter-content">
+            <Content>
                 <ArticleView article={chapter}>
                     <Link to={'/tableOfContents'}>Back to table of contents</Link>
                 </ArticleView>
-            </div>
+            </Content>
         </div>;
     }
 }
