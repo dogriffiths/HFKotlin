@@ -6,8 +6,8 @@
     line-height: 24.4333px;;
     overflow-wrap: break-word;
     text-rendering: optimizelegibility;
-    margin-top: 4px;
-    padding-top: 48px;
+    margin-top: 48px;
+    padding-top: 12px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -18,14 +18,16 @@
     letter-spacing: -0.516667px;
     font-weight: 600;
     margin-left: -2.13333px;
+    margin-top: 16px;
     margin-bottom: 0;
     margin-right: 0;
+    padding-top: 16px;
     overflow-wrap: break-word;
     text-rendering: optimizelegibility;
 }
 
 .Content-container h1 {
-    margin-top: 20px;
+    margin-top: 4px;
     font-size: 28px;
     line-height: 36px;
 }
@@ -50,7 +52,7 @@
 
 @media screen and (min-width: 600px) {
     .Content-container {
-        margin-top: 24px;
+        margin-top: 56px;
     }
 }
 
@@ -59,7 +61,7 @@
         font-size: 21px;
         line-height: 33.1833px;
         letter-spacing: -0.0666667px;
-        margin-top: 12px;
+        margin-top: 64px;
         padding-left: auto;
         padding-right: auto;
     }
@@ -73,7 +75,7 @@
     }
 
     .Content-container h1 {
-        margin-top: 56px;
+        margin-top: 12px;
         font-size: 34px;
     }
 
