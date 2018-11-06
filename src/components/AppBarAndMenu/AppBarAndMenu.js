@@ -9,9 +9,14 @@ import Drawer from "@material-ui/core/Drawer";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import {withRouter} from 'react-router-dom'
+import {withRouter} from 'react-router-dom';
+import CloudDownload from "@material-ui/icons/CloudDownload";
+import Home from "@material-ui/icons/Home";
+import Contacts from "@material-ui/icons/Contacts";
+import Edit from "@material-ui/icons/Edit";
 
 import './AppBarAndMenu.css';
+import ListItemIcon from "@material-ui/core/ListItemIcon/ListItemIcon";
 
 const styles = {
     root: {
@@ -76,6 +81,9 @@ class AppBarAndMenu extends Component {
                                     this.props.history.push('/')
                                 })}
                             >
+                                <ListItemIcon>
+                                    <Home />
+                                </ListItemIcon>
                                 <ListItemText primary='Head First Kotlin'/>
                             </ListItem>
                             <ListItem
@@ -84,6 +92,9 @@ class AppBarAndMenu extends Component {
                                     this.props.history.push('/tableOfContents')
                                 })}
                             >
+                                <ListItemIcon>
+                                    <Contacts />
+                                </ListItemIcon>
                                 <ListItemText primary='Table of contents'/>
                             </ListItem>
                             <ListItem
@@ -92,6 +103,9 @@ class AppBarAndMenu extends Component {
                                     this.props.history.push('/blogs')
                                 })}
                             >
+                                <ListItemIcon>
+                                    <Edit />
+                                </ListItemIcon>
                                 <ListItemText primary='Blog'/>
                             </ListItem>
                             <ListItem
@@ -100,6 +114,9 @@ class AppBarAndMenu extends Component {
                                     this.props.history.push('/sourceCode')
                                 })}
                             >
+                                <ListItemIcon>
+                                    <CloudDownload />
+                                </ListItemIcon>
                                 <ListItemText primary='Source code'/>
                             </ListItem>
                         </List>

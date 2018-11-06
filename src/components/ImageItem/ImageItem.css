@@ -14,8 +14,12 @@
     height: 44px;
     overflow: hidden;
     margin: 0;
-    padding-top: 4px;
+    padding-top: 6px;
     padding-right: 11px;
+}
+
+.ImageItem-info {
+    margin-bottom: -12px;
 }
 
 .ImageItem-photo-disabled {
@@ -131,6 +135,7 @@
     }
 
     .ImageItem-info {
+        margin-bottom: auto;
         width: 200px;
     }
 }
