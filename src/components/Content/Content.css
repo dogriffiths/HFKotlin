@@ -6,7 +6,8 @@
     line-height: 24.4333px;;
     overflow-wrap: break-word;
     text-rendering: optimizelegibility;
-    margin-top: 16px;
+    margin-top: 4px;
+    padding-top: 48px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -47,12 +48,18 @@
     max-width: 800px;
 }
 
+@media screen and (min-width: 600px) {
+    .Content-container {
+        margin-top: 24px;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .Content-container {
         font-size: 21px;
         line-height: 33.1833px;
         letter-spacing: -0.0666667px;
-        margin-top: 21px;
+        margin-top: 12px;
         padding-left: auto;
         padding-right: auto;
     }

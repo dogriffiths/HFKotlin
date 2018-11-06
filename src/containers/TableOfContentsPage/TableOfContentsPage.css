@@ -1,0 +1,9 @@
+.tableOfContents {
+    padding-top: 64px;
+}
+
+@media screen and (min-width: 600px) {
+    .tableOfContents {
+        padding-top: 72px;
+    }
+}
