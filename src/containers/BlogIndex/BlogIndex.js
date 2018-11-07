@@ -16,10 +16,11 @@ class BlogIndex extends Component {
 
     render() {
         return <div>
-            <AppBarAndMenu title='Blog'/>
-            <Content>
-                <ArticleList articles={this.state.articles}/>
-            </Content>
+            <AppBarAndMenu title='Blog'>
+                <Content>
+                    <ArticleList articles={this.state.articles}/>
+                </Content>
+            </AppBarAndMenu>
         </div>;
     }
 }

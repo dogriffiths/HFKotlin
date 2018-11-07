@@ -20,19 +20,20 @@ class HomePage extends Component {
 
     render() {
         return <div>
-            <AppBarAndMenu title='Head First Kotlin'/>
-            <Content>
-                <div className='Home-main'>
-                    <ArticleView article={home.main}/>
-                    <section className='Home-recent'>
-                        <h2>Recent posts</h2>
-                        <ArticleList articles={this.state.articles}/>
-                    </section>
-                </div>
-                <div className='Home-other'>
-                    <TwitterTimeline/>
-                </div>
-            </Content>
+            <AppBarAndMenu title='Head First Kotlin'>
+                <Content>
+                    <div className='Home-main'>
+                        <ArticleView article={home.main}/>
+                        <section className='Home-recent'>
+                            <h2>Recent posts</h2>
+                            <ArticleList articles={this.state.articles}/>
+                        </section>
+                    </div>
+                    <div className='Home-other'>
+                        <TwitterTimeline/>
+                    </div>
+                </Content>
+            </AppBarAndMenu>
         </div>;
     }
 }

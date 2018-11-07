@@ -9,6 +9,7 @@ import SourceCodePage from "./containers/SourceCodePage/SourceCodePage";
 import BlogIndex from "./containers/BlogIndex/BlogIndex";
 import Article from "./containers/Article/Article";
 import Chapter from "./containers/Chapter/Chapter";
+import Search from "./containers/Search/Search";
 
 class App extends Component {
     render() {
@@ -22,6 +23,8 @@ class App extends Component {
                         <Route exact path="/sourceCode" component={SourceCodePage}/>
                         <Route exact path="/blogs" component={BlogIndex}/>
                         <Route parameter='blogId'  path="/blogs/:blogId" component={Article}/>
+                        <Route exact path="/search" component={Search}/>
+                        <Route parameter='terms'  path="/search/:terms" component={Search}/>
                     </div>
                 </div>
             </HashRouter>

@@ -14,12 +14,13 @@ class Chapter extends Component {
         const chapter = chaptersContent[chapterId];
 
         return <div>
-            <AppBarAndMenu title={chapter.title}/>
-            <Content>
-                <ArticleView article={chapter}>
-                    <Link to={'/tableOfContents'}>Back to table of contents</Link>
-                </ArticleView>
-            </Content>
+            <AppBarAndMenu title={chapter.title}>
+                <Content>
+                    <ArticleView article={chapter}>
+                        <Link to={'/tableOfContents'}>Back to table of contents</Link>
+                    </ArticleView>
+                </Content>
+            </AppBarAndMenu>
         </div>;
     }
 }

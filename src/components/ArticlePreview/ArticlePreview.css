@@ -71,6 +71,10 @@ div.ArticlePreview-title a {
     text-rendering: optimizelegibility;
 }
 
+.ArticlePreview-imageContainer {
+    display: none;
+}
+
 .ArticlePreview-footer {
     margin-left: 24px;
     margin-right: 16px;
@@ -104,6 +108,10 @@ div.ArticlePreview-title a {
         overflow-wrap: break-word;
         text-rendering: optimizelegibility;
         -moz-osx-font-smoothing: grayscale;
+    }
+
+    .ArticlePreview-imageContainer {
+        display: inline;
     }
 
     .ArticlePreview-image {

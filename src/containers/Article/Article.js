@@ -14,12 +14,13 @@ class Article extends Component {
         const article = blog[blogId];
 
         return <div>
-            <AppBarAndMenu title={article.title}/>
-            <Content>
-                <ArticleView article={article}>
-                    <Link to={'/blogs'} className='returnToBlogs'>Back to blogs</Link>
-                </ArticleView>
-            </Content>
+            <AppBarAndMenu title={article.title}>
+                <Content>
+                    <ArticleView article={article}>
+                        <Link to={'/blogs'} className='returnToBlogs'>Back to blogs</Link>
+                    </ArticleView>
+                </Content>
+            </AppBarAndMenu>
         </div>;
     }
 }

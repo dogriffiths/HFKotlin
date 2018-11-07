@@ -1,0 +1,16 @@
+.SearchField {
+    display: none;
+}
+
+.SearchButton {
+    display: inline;
+}
+
+@media screen and (min-width: 600px) {
+    .SearchField {
+        display: inline;
+    }
+    .SearchButton {
+        display: none !important;
+    }
+}

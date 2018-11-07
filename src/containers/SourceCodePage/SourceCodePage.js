@@ -10,10 +10,11 @@ import Content from "../../components/Content/Content";
 class SourceCodePage extends Component {
     render() {
         return <div>
-            <AppBarAndMenu title='Source code'/>
-            <Content>
-                <ArticleView article={sourceCode.main}/>
-            </Content>
+            <AppBarAndMenu title='Source code'>
+                <Content>
+                    <ArticleView article={sourceCode.main}/>
+                </Content>
+            </AppBarAndMenu>
         </div>;
     }
 }
