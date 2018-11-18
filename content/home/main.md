@@ -1,3 +1,7 @@
+# Files for the Drum Machine
+
+You can download the audio files for the drum machine [here](audio.zip).
+
 # What will you learn from this book?
 
 Head First Kotlin is a complete introduction to coding in Kotlin. This book helps you learn the Kotlin language with a unique method that goes beyond syntax and how-to manuals, and teaches you how to think like a great Kotlin developer. Despite its playful appearance, it's serious stuff. You'll learn everything from language fundamentals, through to collections, generics, lambdas and higher-order functions. And along the way, you'll get to play with both object-oriented and functional programming. If you want to really understand Kotlin, this is the book for you.
