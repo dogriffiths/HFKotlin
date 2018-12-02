@@ -1,7 +1,8 @@
 ---
 title: The year ahead for Kotlin
+subtitle: Looking into the future
 author: Head First Labs
-image: images/11254.jpg
+image: images/53174.JPG
 date: "2018-12-01 13:06"
 tags:
   - Predictions
