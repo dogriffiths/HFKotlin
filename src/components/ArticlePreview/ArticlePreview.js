@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import React, {Component} from "react";
-import Cover from "../Cover/Cover";
 import ArticleFooter from "../ArticleFooter/ArticleFooter";
 
 import './ArticlePreview.css'

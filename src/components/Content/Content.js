@@ -4,7 +4,7 @@ import './Content.css';
 
 const Content = (props) => {
     return <div className='Content-container'>
-        <div className='Content-inner'>
+        <div className='Content-inner' {...props}>
             {props.children}
         </div>
     </div>;

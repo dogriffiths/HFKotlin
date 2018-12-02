@@ -23,6 +23,9 @@ class ArticleView extends Component {
             {article.image &&
             <div className='Article-imageContainer'><Cover src={article.image} className='Article-image'/></div>
             }
+            {article.book &&
+            <div className='Article-imageContainer'><Cover src={article.book} className='Article-book'/></div>
+            }
             {article.subtitle &&
             <h1 className='subtitle'>{article.subtitle}</h1>
             }

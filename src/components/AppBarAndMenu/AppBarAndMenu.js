@@ -22,9 +22,6 @@ import {fade} from '@material-ui/core/styles/colorManipulator';
 import './AppBarAndMenu.css';
 import Search from "../../containers/Search/Search";
 import Content from "../Content/Content";
-import Menu from "@material-ui/core/Menu/Menu";
-import MenuItem from "@material-ui/core/MenuItem/MenuItem";
-import Popover from '@material-ui/core/Popover';
 
 const styles = theme => ({
     root: {
@@ -87,6 +84,13 @@ const styles = theme => ({
     },
 });
 
+function scrollIntoView() {
+    const element = document.getElementById('content');
+    if (element) {
+        element.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
+    }
+}
+
 class AppBarAndMenu extends Component {
     constructor(props) {
         super(props);
@@ -98,11 +102,13 @@ class AppBarAndMenu extends Component {
     componentDidMount() {
         document.title = this.props.title;
         this.setState({terms: null})
+        scrollIntoView();
     }
 
     componentDidUpdate(lastProps) {
         if (lastProps.location.pathname !== this.props.location.pathname) {
-            this.setState({terms: null})
+            this.setState({terms: null});
+            scrollIntoView();
         }
     }
 
@@ -236,6 +242,7 @@ class AppBarAndMenu extends Component {
                     </div>
                 </div>
             </Drawer>
+            <div  id='content' style={{width: 0, height: 0}}>&nbsp;</div>
             {(this.state.terms && this.state.terms.length > 0)
                 ? <Content><Search terms={this.state.terms}/></Content>
                 : this.props.children

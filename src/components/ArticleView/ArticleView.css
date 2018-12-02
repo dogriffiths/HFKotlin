@@ -1,12 +1,22 @@
-.Article-image {
-    width: 150px;
-    height: 120px;
+.Article-image, .Article-book {
     float: right;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.07);
-    border-width: 15px;
     border-style: solid;
     border-color: white;
     transform: rotate(5deg);
+}
+
+.Article-image {
+    width: 150px;
+    height: 120px;
+    border-width: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+}
+
+.Article-book {
+    width: 150px;
+    height: 180px;
+    border-width: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.07);
 }
 
 .Article-content pre {

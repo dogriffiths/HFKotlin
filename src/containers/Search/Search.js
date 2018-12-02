@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ArticleList from "../../components/ArticleList/ArticleList";
-import {blogArticles, allChapters} from "../../content";
+import {allChapters, blogArticles} from "../../content";
 import {withRouter} from "react-router-dom";
 
 class Search extends Component {
@@ -14,7 +14,7 @@ class Search extends Component {
     }
 
     componentDidUpdate(lastProps) {
-        if (lastProps.terms != this.props.terms) {
+        if (lastProps.terms !== this.props.terms) {
             this.setState({terms: this.props.terms});
         }
     }
