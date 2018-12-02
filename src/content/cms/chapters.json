@@ -74,8 +74,8 @@
     "title": "nulls and exceptions",
     "subtitle": "Safe and Sound",
     "image": "images/11077.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Everybody wants to write code that’s safe \n\rAnd the great news is …",
+    "content": "\n## Everybody wants to write code that’s safe \n\rAnd the great news is that Kotlin was designed with code-safety at its heart. We’ll start by showing you how Kotlin’s use of nullable types means that you’ll hardly ever experience a NullPointerException during your entire stay in Kotlinville. You’ll discover how to make safe calls, and how Kotlin’s Elvis operator stops you being all shook up. And when we’re done with nulls, you’ll find out how to throw and catch exceptions like a pro.\n",
     "basename": "08"
   }
 ,
@@ -84,8 +84,8 @@
     "title": "collections",
     "subtitle": "Get Organized",
     "image": "images/11004.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Ever wanted something more flexible than an array \n\rKotlin comes …",
+    "content": "\n## Ever wanted something more flexible than an array \n\rKotlin comes with a bunch of useful collections that give you more flexibility and greater control over how you store and manage groups of objects. Want to keep a resizeable list that you can keep adding to? Want to sort, shuffle or reverse its contents? Want to find something by name? Or do you want something that will automatically weed out duplicates without you lifting a finger? If you want any of these things, or more, keep reading. It’s all here...",
     "basename": "09"
   }
 ,
@@ -94,8 +94,8 @@
     "title": "generics",
     "subtitle": "Know your Ins from your Outs",
     "image": "images/11148.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Everybody likes code that’s consistent \n\rAnd one way of writing …",
+    "content": "\n## Everybody likes code that’s consistent \n\rAnd one way of writing consistent code that’s less prone to problems is to use generics. In this chapter, we’ll look at how Kotlin’s collection classes use generics to stop you from putting a Cabbage into a List<Seagull>. You’ll discover when and how to write your own generic classes, interfaces and functions, and how to restrict a generic type to a specific supertype. Finally, you’ll find out how to use covariance and contravariance, putting YOU in control of your generic type’s behavior.\n",
     "basename": "10"
   }
 ,
@@ -104,8 +104,8 @@
     "title": "lambdas & higher-order functions",
     "subtitle": "Treating Code like Data",
     "image": "images/11333.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Want to write code that’s even more powerful and flexible \n\rIf …",
+    "content": "\n## Want to write code that’s even more powerful and flexible \n\rIf so, then you need lambdas. A lambda—or lambda expression—is a block of code that you can pass round just like an object. Here, you’ll discover how to define a lambda, assign it to a variable, and then execute its code. You’ll learn about function types, and how these can help you write higher-order functions that use lambdas for their parameter or return values. And along the way, you’ll find out how a little syntactic sugar can make your coding life sweeter.\n",
     "basename": "11"
   }
 ,
@@ -114,28 +114,38 @@
     "title": "built-in higher-order functions",
     "subtitle": "Power Up your Code",
     "image": "images/11142.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "preview": "## Kotlin has an entire host of built-in higher-order functions \n …",
+    "content": "\n## Kotlin has an entire host of built-in higher-order functions \n\rAnd in this chapter, we’ll introduce you to some of the most useful ones. You’ll meet the flexible filter family, and discover how they can help you trim your collection down to size. You’ll learn how to transform a collection using map, loop through its items with forEach, and how to group the items in your collection using groupBy. You’ll even use fold to perform complex calculations using just one line of code. By the end of the chapter, you’ll be able to write code more powerful than you ever thought possible.",
     "basename": "12"
   }
 ,
   "13": {
     "name": "App I",
-    "title": "testing",
-    "subtitle": "Hold your Code to Account",
-    "image": "images/11199.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
+    "title": "coroutines",
+    "subtitle": "Running Code in Parallel",
+    "image": "images/11278.jpg",
+    "preview": "**Some tasks are best performed in the background.**\n\rIf you want to …",
+    "content": "\n**Some tasks are best performed in the background.**\n\rIf you want to read data from a slow external server, you probably don’t want the rest of your code to hang around, waiting for the job to complete. In situations such as these, coroutines are your new BFF. Coroutines let you write code that’s run asynchronously. This means less time hanging around, a better user experience, and it can also make your application more scalable. Keep reading, and you’ll learn the secret of how to talk to Bob, while simultaneously listening to Suzy.\n",
     "basename": "13"
   }
 ,
   "14": {
     "name": "App II",
+    "title": "testing",
+    "subtitle": "Hold your Code to Account",
+    "image": "images/11199.jpg",
+    "preview": "## Everybody knows that good code needs to work.\n\rBut each code …",
+    "content": "\n## Everybody knows that good code needs to work.\n\rBut each code change that you make runs the risk of introducing fresh bugs that stop your code from working as it should. That’s why thorough testing is so important: it means you get to know about any problems in your code before it’s deployed to the live environment. In this appendix, we’ll discuss JUnit and KotlinTest, two libraries which you can use to unit test your code so that you always have a safety net.",
+    "basename": "14"
+  }
+,
+  "15": {
+    "name": "App III",
     "title": "leftovers",
     "subtitle": "The Top Ten Things we didn't cover",
     "image": "images/11287.jpg",
-    "preview": "Some content goes here",
-    "content": "\nSome content goes here\n",
-    "basename": "14"
+    "preview": "## Even after all that, there’s still a little more.\n\rThere are just …",
+    "content": "\n## Even after all that, there’s still a little more.\n\rThere are just a few more things we think you need to know. We wouldn’t feel right about ignoring them, and we really wanted to give you a book you’d be able to lift without training at the local gym. Before you put down the book, read through these tidbits.\n",
+    "basename": "15"
   }
 }
