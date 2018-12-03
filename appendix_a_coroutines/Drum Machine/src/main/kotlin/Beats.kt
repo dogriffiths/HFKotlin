@@ -31,8 +31,8 @@ fun playSound(file: String) {
 }
 
 suspend fun main() {
-    GlobalScope.launch {
-        playBeats("x-x-x-x-x-x-", "toms.aiff")
+    runBlocking {
+        launch { playBeats("x-x-x-x-x-x-", "toms.aiff") }
+        playBeats("x-----x-----", "crash_cymbal.aiff")
     }
-    playBeats("x-----x-----", "crash_cymbal.aiff")
 }
