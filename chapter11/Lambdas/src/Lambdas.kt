@@ -10,7 +10,7 @@ fun convert(
 }
 
 fun getConversionLambda(str: String): DoubleConversion {
-    if (str == "CentigradeToFarenheit") {
+    if (str == "CentigradeToFahrenheit") {
         return { it * 1.8 + 32 }
     } else if (str == "KgsToPounds") {
         return { it * 2.204623 }
